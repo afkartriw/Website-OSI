@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-custom,
+  .bg-custom2,
+  .bg-custom3,
+  .bg-blog,.bg-video,.bg-featured,
+  .bg-01,.bg-02,.bg-03,.bg-services5,
+  .bg-services {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .bg-custom {
+    background-image: url('/images/bg/bg-custom.png');
+  }
+
+  .bg-custom2 {
+    background-image: url('/images/bg/bg-footer.png');
+  }
+
+  .bg-custom3 {
+    background-image: url('/images/bg/bg-facts.png');
+  }
+
+  .bg-services {
+    background-image: url('/images/services/bg-services.png');
+  }
+  .bg-services2 {
+    background-image: url('/images/services/bg-services2.png');
+  }
+  .bg-services3 {
+    background-image: url('/images/services/bg-services3.png');
+  }
+  .bg-services4 {
+    background-image: url('/images/services/bg-services4.png');
+  }
+  .bg-services5 {
+    background-image: url('/images/services/bg-services5.png');
+  }
+  .bg-blog {
+    background-image: url('/images/bg/bg-blog.png');
+  }
+  .bg-01 {
+    background-image: url('/images/bg/01.png');
+  }
+  .bg-02 {
+    background-image: url('/images/bg/02.png');
+  }
+  .bg-03 {
+    background-image: url('/images/bg/03.png');
+  }
+  .bg-video {
+    background-image: url('/images/bg/bg-video.png');
+  }
+  .bg-featured {
+    background-image: url('/images/bg/bg-featured.png');
+  }
+}
+
+.description {
+  display: -webkit-box;          /* Untuk Safari */
+  -webkit-box-orient: vertical; /* Untuk Safari */
+  -webkit-line-clamp: 4;        /* Membatasi hingga 4 baris */
+  overflow: hidden;
+  text-overflow: ellipsis;      /* Menambahkan titik-titik (...) */
+  max-height: calc(4 * 1.5em);  /* Sesuaikan tinggi berdasarkan line-height */
+  line-height: 1.5em;           /* Mengatur tinggi baris */
+}
